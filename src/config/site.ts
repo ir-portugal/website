@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'IR Portugal',
   description:
     'A small, informal community for people in Portugal doing independent research in AI, optimisation and systems.',
-  siteUrl: 'https://ir-portugal.github.io/website',
+  siteUrl: 'https://irportugal.pt',
   discordUrl: '',
   githubUrl: 'https://github.com/ir-portugal/website',
   contactEmail: '',

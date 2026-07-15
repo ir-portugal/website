@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ir-portugal.github.io/website/sitemap-index.xml
+Sitemap: https://irportugal.pt/sitemap-index.xml

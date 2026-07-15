@@ -37,8 +37,6 @@ npm run check:links
 
 ## Deploy
 
-The GitHub Pages workflow builds a project site at `https://<organisation>.github.io/<repository>/`. Set the repository’s Pages source to **GitHub Actions**. For another static host, use `npm run build` and publish `dist/`.
-
-For a custom domain, update `siteUrl` in `src/config/site.ts`, set `SITE_URL` and `BASE_PATH=/` in the deployment environment, and update the sitemap URL in `public/robots.txt`.
+The GitHub Pages workflow publishes the site at `https://irportugal.pt`. The repository’s Pages source must remain set to **GitHub Actions**. For another static host, use `npm run build` and publish `dist/`.
 
 The site has no analytics, cookies, remote fonts, database or backend.

@@ -32,9 +32,9 @@ const discordReady = Boolean(siteConfig.discordUrl);
         <h1>Do your research.<br /><span>Work with others.</span></h1>
         <p class="hero__intro">
           IR Portugal is a small, informal Discord community for people doing
-          independent work in AI, optimisation, algorithms and systems. Bring
-          your own project, find people who can help, or offer guidance as a
-          mentor.
+          independent work in AI, optimisation, algorithms and systems. Bring a
+          project or an idea, meet people who can contribute, or join someone
+          else's work with your experience.
         </p>
         {
           (discordReady || siteConfig.githubUrl) && (
@@ -64,81 +64,92 @@ const discordReady = Boolean(siteConfig.discordUrl);
         }
       </div>
 
-      <div class="research-map" data-research-map>
-        <div class="research-map__stage">
-          <svg
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <path data-link="collaborators" class="is-active" d="M50 32V19"
+      <figure class="research-scene">
+        <svg
+          viewBox="0 0 560 500"
+          role="img"
+          aria-labelledby="research-scene-title research-scene-desc"
+        >
+          <title id="research-scene-title">
+            People developing research together
+          </title>
+          <desc id="research-scene-desc">
+            Three people exchange ideas around a table covered with notes while
+            working through a problem on a large board.
+          </desc>
+
+          <path
+            class="research-scene__wash"
+            d="M39 104C87 35 199 5 293 30c104 28 195 118 219 221 22 95-10 190-110 220-91 28-235 9-312-59C16 346-6 171 39 104Z"
+          ></path>
+          <path
+            class="research-scene__accent research-scene__orbit"
+            d="M30 260C82 119 208 52 361 71c82 10 143 56 171 121"></path>
+
+          <g class="research-scene__board">
+            <path d="M70 48 493 39l5 213-426 8Z"></path>
+            <path
+              class="research-scene__tape"
+              d="m101 34 62-4 3 30-63 4zM409 29l58 4-3 29-59-4z"></path>
+            <g class="research-scene__ink">
+              <path d="M107 111c23-37 50-36 75-3 21 28 42 29 64-3"></path>
+              <path d="M108 149h139"></path>
+              <path d="M284 90h64m-64 34h42m-42 34h78"></path>
+              <path d="M387 89c33 8 56 28 67 58m-58 33c22-5 43-17 59-37"></path>
+              <path d="m440 136 15 7-4-17"></path>
+              <circle cx="387" cy="89" r="7"></circle>
+              <circle cx="396" cy="180" r="7"></circle>
+            </g>
+            <g class="research-scene__accent research-scene__board-accent">
+              <path d="m112 197 29-20 32 23 34-29 35 19"></path>
+              <path d="M280 203c39-12 79-13 121-4"></path>
+              <path d="m364 185 37 14-33 21"></path>
+            </g>
+          </g>
+
+          <g class="research-scene__people research-scene__ink">
+            <path d="M113 330c-4-35 10-57 36-57 28 0 43 24 37 59"></path>
+            <path d="M116 295c17-27 50-28 70-2"></path>
+            <path d="M128 305c5-4 10-4 15 0m20 0c5-4 10-4 14 0"></path>
+            <path d="M138 319c10 8 20 8 29 0"></path>
+            <path d="M95 397c3-38 20-58 47-65m45 1c20 7 36 25 43 50"></path>
+            <path d="m179 350 60 55"></path>
+
+            <path d="M373 330c-5-35 10-57 36-57 28 0 43 24 37 59"></path>
+            <path d="M376 294c17-27 50-28 70-2"></path>
+            <path d="M387 305c5-4 10-4 15 0m20 0c5-4 10-4 14 0"></path>
+            <path d="M398 319c10 8 20 8 29 0"></path>
+            <path d="M352 383c8-25 25-43 50-51m45 1c25 8 42 30 47 67"></path>
+            <path d="m376 356-56 48"></path>
+
+            <circle cx="278" cy="282" r="31"></circle>
+            <path d="M250 273c15-25 42-28 60-6"></path>
+            <path d="M260 282c5-3 9-3 13 0m13 0c5-3 9-3 13 0"></path>
+            <path d="M268 294c8 6 16 6 23 0"></path>
+            <path d="M244 391c0-43 9-69 27-79m15 0c20 11 31 38 32 80"></path>
+            <path d="m254 330-47-49-41-43"></path>
+            <path d="m160 244 6-6 8 2"></path>
+          </g>
+
+          <g class="research-scene__table research-scene__ink">
+            <path d="M45 398c144-21 316-21 470 0l-18 71c-139 20-286 20-433 0Z"
             ></path>
-            <path data-link="mentors" d="M34 50H21"></path>
-            <path data-link="feedback" d="M66 50h13"></path>
-            <path data-link="share" d="M50 68v13"></path>
-          </svg>
-          <div class="research-map__core" aria-hidden="true">
-            <svg viewBox="0 0 220 160">
-              <g class="research-map__people">
-                <path d="M34 62c-3-24 7-37 22-37 16 0 26 15 22 39"></path>
-                <path d="M36 43c10-17 30-18 42 0"></path>
-                <path d="M44 50c4-3 8-3 11 0m10 0c4-3 7-3 10 0"></path>
-                <path d="M48 59c6 5 12 5 18 0"></path>
-                <path d="M142 63c-3-24 7-38 22-38 16 0 26 15 22 39"></path>
-                <path d="M144 43c10-17 30-18 42 0"></path>
-                <path d="M152 50c4-3 8-3 11 0m10 0c4-3 7-3 10 0"></path>
-                <path d="M156 59c6 5 12 5 18 0"></path>
-                <path d="M34 69c-15 4-23 16-26 34m70-34c13 4 22 13 28 27"
-                ></path>
-                <path d="M142 69c-13 4-22 13-28 27m72-27c15 4 23 16 26 34"
-                ></path>
-                <path d="M75 77l27 30m44-30-24 28"></path>
-                <path d="M18 137c60 5 125 5 184 0"></path>
-                <path d="M72 103l76-6-9 29-77 7z"></path>
-              </g>
-              <g class="research-map__notes">
-                <path d="M84 112c13-2 27-3 41-3m-45 12c17-1 34-3 50-5"></path>
-                <path d="M108 88v-7m-9 4-4-5m22 5 4-5"></path>
-              </g>
-            </svg>
-          </div>
-          <button
-            class="research-map__node research-map__node--top is-active"
-            type="button"
-            data-topic="collaborators"
-            aria-pressed="true"
-          >
-            Collaborators
-          </button>
-          <button
-            class="research-map__node research-map__node--left"
-            type="button"
-            data-topic="mentors"
-            aria-pressed="false"
-          >
-            Mentors
-          </button>
-          <button
-            class="research-map__node research-map__node--right"
-            type="button"
-            data-topic="feedback"
-            aria-pressed="false"
-          >
-            Feedback
-          </button>
-          <button
-            class="research-map__node research-map__node--bottom"
-            type="button"
-            data-topic="share"
-            aria-pressed="false"
-          >
-            Share work
-          </button>
-        </div>
-        <p class="research-map__answer" aria-live="polite">
-          Find people who want to build with you.
-        </p>
-      </div>
+            <path d="M64 469c143 17 286 17 433 0"></path>
+            <path d="M88 486v-14m385 14v-14"></path>
+            <path d="m151 393 72-13 18 33-76 10z"></path>
+            <path d="m338 384 74 10-13 30-78-11z"></path>
+            <path d="M255 404h51"></path>
+            <path d="M262 417h38"></path>
+            <circle cx="112" cy="418" r="14"></circle>
+            <path d="M126 416c14-3 17 14 3 16"></path>
+          </g>
+          <g class="research-scene__accent research-scene__notes">
+            <path d="M169 403c16-6 32-8 49-9"></path>
+            <path d="M340 400c16 1 32 4 48 9"></path>
+            <path d="M265 439c12-2 24-2 36 0"></path>
+          </g>
+        </svg>
+      </figure>
     </section>
 
     <section class="idea container" aria-labelledby="idea-title">
@@ -155,12 +166,16 @@ const discordReady = Boolean(siteConfig.discordUrl);
           <p>
             <strong>As a researcher</strong>
             <span
-              >Bring a project, find collaborators and get honest feedback.</span
+              >Bring a project or idea, find collaborators and get honest
+              feedback.</span
             >
           </p>
           <p>
             <strong>As a mentor</strong>
-            <span>Find projects where your experience can be useful.</span>
+            <span
+              >Bring your own projects and questions, or help someone develop
+              theirs.</span
+            >
           </p>
         </div>
       </div>
@@ -175,7 +190,10 @@ const discordReady = Boolean(siteConfig.discordUrl);
       </svg>
       <div>
         <h2>The community is on Discord.</h2>
-        <p>Share a project, offer mentorship, or find someone to work with.</p>
+        <p>
+          Bring a project or idea, offer mentorship, or find someone to work
+          with.
+        </p>
       </div>
       {
         discordReady ? (
@@ -204,37 +222,4 @@ const discordReady = Boolean(siteConfig.discordUrl);
       )
     }
   </footer>
-
-  <script>
-    const topicCopy = {
-      collaborators: 'Find people who want to build with you.',
-      mentors: 'As a mentor, find projects where your experience can help.',
-      feedback: 'Test unfinished thinking with people who understand it.',
-      share: 'Give useful work a place to be seen and discussed.',
-    } as const;
-
-    document
-      .querySelectorAll<HTMLElement>('[data-research-map]')
-      .forEach((map) => {
-        const answer = map.querySelector<HTMLElement>('.research-map__answer');
-        const buttons = map.querySelectorAll<HTMLButtonElement>('[data-topic]');
-        const links = map.querySelectorAll<SVGPathElement>('[data-link]');
-
-        buttons.forEach((button) => {
-          button.addEventListener('click', () => {
-            const topic = button.dataset.topic as keyof typeof topicCopy;
-
-            buttons.forEach((item) => {
-              const selected = item === button;
-              item.classList.toggle('is-active', selected);
-              item.setAttribute('aria-pressed', String(selected));
-            });
-            links.forEach((link) => {
-              link.classList.toggle('is-active', link.dataset.link === topic);
-            });
-            if (answer) answer.textContent = topicCopy[topic];
-          });
-        });
-      });
-  </script>
 </BaseLayout>

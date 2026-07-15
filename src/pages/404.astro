@@ -1,0 +1,13 @@
+---
+import { withBase } from '../config/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page not found" noindex>
+  <main id="main-content" class="not-found container">
+    <p class="eyebrow">404 / wrong turn</p>
+    <h1>Nothing here.</h1>
+    <p>The link may be old, incomplete, or simply wrong.</p>
+    <a class="plain-link" href={withBase('/')}>Back to IR Portugal →</a>
+  </main>
+</BaseLayout>

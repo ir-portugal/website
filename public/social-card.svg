@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">IR Portugal</title>
+  <desc id="desc">Do your research. Work with others.</desc>
+  <rect width="1200" height="630" fill="#f4f1e8"/>
+  <path d="M64 68c33-11 79-8 104 7 9 29 7 71-5 98-30 8-75 5-101-6-8-31-6-72 2-99Z" fill="#171717"/>
+  <text x="84" y="134" fill="#fff" font-family="ui-monospace,monospace" font-size="42" font-weight="700">IR</text>
+  <text x="192" y="130" fill="#171717" font-family="Trebuchet MS,sans-serif" font-size="43" font-weight="700">IR Portugal</text>
+  <text x="70" y="325" fill="#171717" font-family="Trebuchet MS,sans-serif" font-size="78" font-weight="800">Do your research.</text>
+  <text x="70" y="420" fill="#2246d2" font-family="Trebuchet MS,sans-serif" font-size="78" font-weight="800">Work with others.</text>
+  <path d="M74 445c235-14 471 16 704-6" fill="none" stroke="#2246d2" stroke-width="7" stroke-linecap="round"/>
+  <g fill="none" stroke="#171717" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="975" cy="255" r="62"/><path d="m932 295-42 42 65-27"/>
+    <path d="M866 420c98-33 200-23 275 5"/><circle cx="875" cy="418" r="10" fill="#2246d2" stroke="none"/><circle cx="1137" cy="425" r="10" fill="#2246d2" stroke="none"/>
+  </g>
+  <text x="70" y="555" fill="#4b4a45" font-family="ui-monospace,monospace" font-size="20" letter-spacing="2">AI · OPTIMISATION · ALGORITHMS · SYSTEMS</text>
+</svg>

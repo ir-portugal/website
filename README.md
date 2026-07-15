@@ -19,7 +19,6 @@ Edit `src/config/site.ts` and add the real values before publishing:
 
 ```ts
 discordUrl: 'https://discord.gg/your-invite',
-githubUrl: 'https://github.com/your-organisation',
 contactEmail: 'your-public-email@example.org',
 ```
 

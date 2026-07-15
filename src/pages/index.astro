@@ -37,28 +37,16 @@ const discordReady = Boolean(siteConfig.discordUrl);
           else's work with your experience.
         </p>
         {
-          (discordReady || siteConfig.githubUrl) && (
+          discordReady && (
             <div class="hero__actions">
-              {discordReady && (
-                <a
-                  class="button"
-                  href={siteConfig.discordUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Join the Discord <span aria-hidden="true">↗</span>
-                </a>
-              )}
-              {siteConfig.githubUrl && (
-                <a
-                  class="plain-link"
-                  href={siteConfig.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub <span aria-hidden="true">↗</span>
-                </a>
-              )}
+              <a
+                class="button"
+                href={siteConfig.discordUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Join the Discord <span aria-hidden="true">↗</span>
+              </a>
             </div>
           )
         }
